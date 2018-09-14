@@ -22,7 +22,7 @@ namespace Vavatech.Shop.Models
 
         }
 
-        public Product(int id, string name, decimal price, string color, string ean) : base(id, name, price, ean)
+        public Product(string name, decimal price, string color, string ean) : base(name, price, ean)
         {
             Color = color ?? throw new ArgumentNullException(nameof(color)); ;
         }

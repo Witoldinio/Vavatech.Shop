@@ -6,15 +6,40 @@ namespace Vavatech.Shop.Models
 {
     public class Order : Base
     {
-        private static int counter = 0;
-
         public int Id { get; set; }
         public DateTime Date { get; set; }
         public string  OrderNumber { get; set; }
         public Customer Customer { get; set; }
         public DateTime? DeliveryDate { get; set; }
-
+        public Statuses Status { get; set; }
+        
         public List<OrderItem> Items { get; set; }
+
+        //[Flags]
+        //public enum RoomStatus
+        //{
+        //    L1 = 2 ^ 3,
+        //    L2 = 2 ^ 2,
+        //    P = 2 ^ 1,
+        //    O = 2 ^ 0,
+        //}
+
+        // Typ wyliczeniowy
+        public enum Statuses
+        {
+            Draft,
+            Created,
+            Canceled,
+            Sent,
+            Delivered
+        }
+
+        public decimal TotalPrice {
+            get
+            {
+                return Items.Sum(i => i.TotalPrice);
+            }
+        }
 
         public override string ToString()
         {
@@ -47,7 +72,6 @@ namespace Vavatech.Shop.Models
 
             Customer = customer;
             Date = DateTime.Now;
-            Id = counter++;
             OrderNumber = $"{Date.Year}/{Date.Month}/{Id + 1}";
             Items = new List<OrderItem>();
         }
@@ -60,6 +84,11 @@ namespace Vavatech.Shop.Models
         public void AddItem(OrderItem item)
         {
             Items.Add(item);
+        }
+
+        protected float TestMethod(int value1, int value2)
+        {
+            return value1 / value2;
         }
     }
 }

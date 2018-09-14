@@ -20,7 +20,7 @@
 
         }
 
-        public Service(int id, string name, decimal price, string ean) : base(id, name, price, ean)
+        public Service(string name, decimal price, string ean) : base(name, price, ean)
         {
         }
     }

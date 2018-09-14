@@ -15,9 +15,9 @@ namespace Vavatech.Shop.FakeServices
         {
             items = new List<Item>
             {
-                new Product(0, "p0", 5, "red", "1234"),
-                new Service(id: 1, name: "s0", price: 3, ean: "2345"),
-                new Product(2, "p1", 6, "yellow", "3456")
+                new Product("p0", 5, "red", "1234"),
+                new Service(name: "s0", price: 3, ean: "2345"),
+                new Product("p1", 6, "yellow", "3456")
             };
         }
 

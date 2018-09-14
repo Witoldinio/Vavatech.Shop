@@ -11,11 +11,11 @@ namespace Vavatech.Shop.Models
         public int Quantity { get; set; }
         public decimal Price { get; set; }
 
-        public decimal Total => Quantity * Price;
+        public decimal TotalPrice => Quantity * Price;
         
         public override string ToString()
         {
-            return $"ID: {Id} - Name: {Item.Name} EAN: {Item.EAN} - Quantity: {Quantity} - Item price: {Price} vs Price: {Item.Price} - Total: {Total}\n";
+            return $"ID: {Id} - Name: {Item.Name} EAN: {Item.EAN} - Quantity: {Quantity} - Item price: {Price} vs Price: {Item.Price} - Total: {TotalPrice}\n";
         }
 
         protected OrderItem()

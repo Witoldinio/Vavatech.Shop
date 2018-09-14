@@ -20,9 +20,8 @@ namespace Vavatech.Shop.Models
 
         }
 
-        protected Item(int id, string name, decimal price, string ean)
+        protected Item(string name, decimal price, string ean)
         {
-            Id = id;
             Name = name ?? throw new ArgumentNullException(nameof(name));
             Price = price;
             EAN = ean;

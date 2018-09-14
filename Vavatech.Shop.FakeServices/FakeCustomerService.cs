@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Vavatech.Shop.IServices;
 using Vavatech.Shop.Models;
 using Bogus;
+using System.Threading.Tasks;
 
 namespace Vavatech.Shop.FakeServices
 {
@@ -70,6 +71,16 @@ namespace Vavatech.Shop.FakeServices
         public List<Customer> SearchByCountry(string query)
         {
             return customers.Where(c => c.Address.Country.Contains(query)).ToList();
+        }
+
+        public Task<Customer> GetAsync(int Id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<List<Customer>> GetAsync()
+        {
+            throw new NotImplementedException();
         }
     }
 }
