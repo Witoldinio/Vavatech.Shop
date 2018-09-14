@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2019
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vavatech.Shop.ConsoleClient", "Vavatech.shop.ConsoleClient\Vavatech.Shop.ConsoleClient.csproj", "{EF4864B4-C2BB-41A4-9D5D-65B510ECF9F0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vavatech.Shop.Models", "Vavatech.Shop.Models\Vavatech.Shop.Models.csproj", "{1FD35195-76E8-4BCD-AEDB-14405027E3CB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vavatech.Shop.IServices", "Vavatech.Shop.IServices\Vavatech.Shop.IServices.csproj", "{EFF1D375-C9A8-47BA-853E-69020021C9A1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vavatech.Shop.FakeServices", "Vavatech.Shop.FakeServices\Vavatech.Shop.FakeServices.csproj", "{008DABC4-6E23-40F8-A5B1-DFE13526F273}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vavatech.Shop.DbServices", "Vavatech.Shop.DbServices\Vavatech.Shop.DbServices.csproj", "{224C985E-9CAE-4236-AAAD-F08BAF3273A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vavatech.Shop.WebServices", "Vavatech.Shop.WebServices\Vavatech.Shop.WebServices.csproj", "{B6F91A33-C5F3-4211-8FA0-BA0D8EE577A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vavatech.Shop.WebServiceClient", "Vavatech.Shop.WebServiceClient\Vavatech.Shop.WebServiceClient.csproj", "{DACC7E15-8E06-4F3A-ABB9-617D8C9B2D8B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF4864B4-C2BB-41A4-9D5D-65B510ECF9F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF4864B4-C2BB-41A4-9D5D-65B510ECF9F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF4864B4-C2BB-41A4-9D5D-65B510ECF9F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF4864B4-C2BB-41A4-9D5D-65B510ECF9F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FD35195-76E8-4BCD-AEDB-14405027E3CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FD35195-76E8-4BCD-AEDB-14405027E3CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FD35195-76E8-4BCD-AEDB-14405027E3CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FD35195-76E8-4BCD-AEDB-14405027E3CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFF1D375-C9A8-47BA-853E-69020021C9A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFF1D375-C9A8-47BA-853E-69020021C9A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFF1D375-C9A8-47BA-853E-69020021C9A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFF1D375-C9A8-47BA-853E-69020021C9A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{008DABC4-6E23-40F8-A5B1-DFE13526F273}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{008DABC4-6E23-40F8-A5B1-DFE13526F273}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{008DABC4-6E23-40F8-A5B1-DFE13526F273}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{008DABC4-6E23-40F8-A5B1-DFE13526F273}.Release|Any CPU.Build.0 = Release|Any CPU
+		{224C985E-9CAE-4236-AAAD-F08BAF3273A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{224C985E-9CAE-4236-AAAD-F08BAF3273A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{224C985E-9CAE-4236-AAAD-F08BAF3273A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{224C985E-9CAE-4236-AAAD-F08BAF3273A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6F91A33-C5F3-4211-8FA0-BA0D8EE577A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6F91A33-C5F3-4211-8FA0-BA0D8EE577A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6F91A33-C5F3-4211-8FA0-BA0D8EE577A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6F91A33-C5F3-4211-8FA0-BA0D8EE577A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DACC7E15-8E06-4F3A-ABB9-617D8C9B2D8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DACC7E15-8E06-4F3A-ABB9-617D8C9B2D8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DACC7E15-8E06-4F3A-ABB9-617D8C9B2D8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DACC7E15-8E06-4F3A-ABB9-617D8C9B2D8B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {402EF555-7FA8-46FF-ABF1-BE2E1EA36994}
+	EndGlobalSection
+EndGlobal
