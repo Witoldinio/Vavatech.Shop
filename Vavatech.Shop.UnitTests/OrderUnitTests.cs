@@ -15,7 +15,7 @@ namespace Vavatech.Shop.UnitTests
 
             // Acts
 
-            //Asserts -> czêœæw której testujemy wyniki
+            //Asserts -> czêœæ w której testujemy wyniki
             Assert.NotNull(order.Customer);
             Assert.Equal(DateTime.Today, order.Date.Date);
             Assert.Equal(Order.Statuses.Draft, order.Status);

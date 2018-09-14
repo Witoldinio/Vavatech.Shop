@@ -22,6 +22,9 @@ namespace Vavatech.Shop.UnitTests
             Assert.Equal(item, orderItem.Item);
             Assert.Equal(30, orderItem.Quantity);
             Assert.Equal((33.33m * 30), orderItem.TotalPrice);
+
+            Assert.IsType<Product>(item);
+            Assert.IsType<Product>(orderItem.Item);
         }
 
         [Fact]
@@ -37,6 +40,9 @@ namespace Vavatech.Shop.UnitTests
             Assert.Equal(item, orderItem.Item);
             Assert.Equal(30, orderItem.Quantity);
             Assert.Equal((33.33m * 30), orderItem.TotalPrice);
+
+            Assert.IsType<Service>(item);
+            Assert.IsType<Service>(orderItem.Item);
         }
     }
 }

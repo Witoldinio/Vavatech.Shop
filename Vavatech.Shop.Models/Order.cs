@@ -88,7 +88,7 @@ namespace Vavatech.Shop.Models
 
         protected float TestMethod(int value1, int value2)
         {
-            return value1 / value2;
+            return Convert.ToSingle(value1) / Convert.ToSingle(value2);
         }
     }
 }
