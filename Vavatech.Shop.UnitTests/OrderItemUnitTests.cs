@@ -15,12 +15,14 @@ namespace Vavatech.Shop.UnitTests
             OrderItem orderItem = new OrderItem(item, 30);
 
             Assert.NotEmpty(item.Name);
-            Assert.Equal(33.33m, item.Price);
             Assert.Equal("Red", item.Color);
             Assert.Equal("ean1", item.EAN);
+            Assert.Equal(33.33m, item.Price);
+            Assert.True(0 < item.Price);
 
             Assert.Equal(item, orderItem.Item);
             Assert.Equal(30, orderItem.Quantity);
+            Assert.True(0 < orderItem.Quantity);
             Assert.Equal((33.33m * 30), orderItem.TotalPrice);
 
             Assert.IsType<Product>(item);
@@ -34,11 +36,13 @@ namespace Vavatech.Shop.UnitTests
             OrderItem orderItem = new OrderItem(item, 30);
 
             Assert.NotEmpty(item.Name);
-            Assert.Equal(33.33m, item.Price);
             Assert.Equal("ean1", item.EAN);
+            Assert.Equal(33.33m, item.Price);
+            Assert.True(0 < item.Price);
 
             Assert.Equal(item, orderItem.Item);
             Assert.Equal(30, orderItem.Quantity);
+            Assert.True(0 < orderItem.Quantity);
             Assert.Equal((33.33m * 30), orderItem.TotalPrice);
 
             Assert.IsType<Service>(item);
