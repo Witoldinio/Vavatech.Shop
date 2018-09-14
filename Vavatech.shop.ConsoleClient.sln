@@ -13,9 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vavatech.Shop.FakeServices"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vavatech.Shop.DbServices", "Vavatech.Shop.DbServices\Vavatech.Shop.DbServices.csproj", "{224C985E-9CAE-4236-AAAD-F08BAF3273A3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vavatech.Shop.WebServices", "Vavatech.Shop.WebServices\Vavatech.Shop.WebServices.csproj", "{B6F91A33-C5F3-4211-8FA0-BA0D8EE577A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vavatech.Shop.WebService.Server", "Vavatech.Shop.WebServices\Vavatech.Shop.WebService.Server.csproj", "{B6F91A33-C5F3-4211-8FA0-BA0D8EE577A2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vavatech.Shop.WebServiceClient", "Vavatech.Shop.WebServiceClient\Vavatech.Shop.WebServiceClient.csproj", "{DACC7E15-8E06-4F3A-ABB9-617D8C9B2D8B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vavatech.Shop.WebService.Client", "Vavatech.Shop.WebServiceClient\Vavatech.Shop.WebService.Client.csproj", "{DACC7E15-8E06-4F3A-ABB9-617D8C9B2D8B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DDBC9D79-1A19-495A-A582-837E4DAB7B4F}"
 	ProjectSection(SolutionItems) = preProject

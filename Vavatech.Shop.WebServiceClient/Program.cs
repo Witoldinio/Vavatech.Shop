@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading;
 using Vavatech.Shop.Models;
 
-namespace Vavatech.Shop.WebServiceClient
+namespace Vavatech.Shop.WebService.Client
 {
     class Program
     {

@@ -9,7 +9,7 @@ using Vavatech.Shop.DbServices;
 using Vavatech.Shop.IServices;
 using Vavatech.Shop.Models;
 
-namespace Vavatech.Shop.WebServices.Controllers
+namespace Vavatech.Shop.WebService.Server.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -24,16 +24,16 @@ namespace Vavatech.Shop.WebServices.Controllers
 
         // GET: api/Customers
         [HttpGet]
-        public IActionResult Get()
+        public async Task<IActionResult> GetAsync()
         {
-            return Ok(_customerService.Get());
+            return Ok(await _customerService.GetAsync());
         }
 
         // GET: api/Customers/5
         [HttpGet("{id}")]
-        public IActionResult Get([FromRoute] int id)
+        public async Task<IActionResult> GetAsync([FromRoute] int id)
         {
-            return Ok(_customerService.Get(id));
+            return Ok(await _customerService.GetAsync(id));
         }
 
         // PUT: api/Customers/5

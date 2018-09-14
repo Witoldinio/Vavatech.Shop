@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using Vavatech.Shop.IServices;
 using Vavatech.Shop.Models;
 
@@ -38,6 +39,18 @@ namespace Vavatech.Shop.DbServices
             return _context.Customers
                 .Include(c => c.Address)
                 .ToList();
+        }
+
+        public Task<Customer> GetAsync(int Id)
+        {
+            return _context.Customers.FindAsync(Id);
+        }
+
+        public Task<List<Customer>> GetAsync()
+        {
+            return _context.Customers
+                .Include(c => c.Address)
+                .ToListAsync();
         }
 
         public void Remove(Customer entity)

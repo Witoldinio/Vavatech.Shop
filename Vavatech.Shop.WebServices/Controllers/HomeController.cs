@@ -4,9 +4,9 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Vavatech.Shop.WebServices.Models;
+using Vavatech.Shop.WebService.Server.Models;
 
-namespace Vavatech.Shop.WebServices.Controllers
+namespace Vavatech.Shop.WebService.Server.Controllers
 {
     public class HomeController : Controller
     {

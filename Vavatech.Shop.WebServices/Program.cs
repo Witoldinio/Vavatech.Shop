@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
-namespace Vavatech.Shop.WebServices
+namespace Vavatech.Shop.WebService.Server
 {
     public class Program
     {

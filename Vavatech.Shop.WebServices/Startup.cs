@@ -13,7 +13,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Vavatech.Shop.DbServices;
 using Vavatech.Shop.IServices;
 
-namespace Vavatech.Shop.WebServices
+namespace Vavatech.Shop.WebService.Server
 {
     public class Startup
     {

@@ -1,6 +1,6 @@
 using System;
 
-namespace Vavatech.Shop.WebServices.Models
+namespace Vavatech.Shop.WebService.Server.Models
 {
     public class ErrorViewModel
     {

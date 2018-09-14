@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Vavatech.Shop.IServices;
 using Vavatech.Shop.Models;
 
-namespace Vavatech.Shop.WebServices.Controllers
+namespace Vavatech.Shop.WebService.Server.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
